@@ -27,6 +27,16 @@
     <script>
 
         const klik = document.querySelector("#klik");
+        klik.addEventListener("click", () => {document.querySelector("#box").textContent = "KLIK";});
+
+
+        const slet= document.querySelector("#slet");
+        slet.addEventListener("click",() => {
+            document.querySelector("#box").textContent ="SLET";
+        });
+
+
+
         console.log(klik);
 
         klik.addEventListener("click", klikket);
